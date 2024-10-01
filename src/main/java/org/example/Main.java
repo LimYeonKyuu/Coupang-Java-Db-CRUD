@@ -30,9 +30,6 @@ public class Main {
                     deleteProduct(scanner, coupangController);
                     break;
                 case 5:
-                    saveProduct(coupangController);
-                    break;
-                case 6:
                     running = false;
                     break;
                 default:
@@ -49,8 +46,7 @@ public class Main {
         System.out.println("2. 물품 목록 보기");
         System.out.println("3. 물품 수정");
         System.out.println("4. 물품 삭제");
-        System.out.println("5. 저장");
-        System.out.println("6. 종료");
+        System.out.println("5. 종료");
         System.out.print("메뉴를 선택하세요: ");
     }
 
@@ -99,9 +95,5 @@ public class Main {
 
         productController.deleteProduct(productId);
         System.out.println("성공적으로 삭제되었습니다.");
-    }
-    private static void saveProduct(CoupangController coupangController) {
-        coupangController.saveProducts();
-        System.out.println("저장이 완료되었습니다.");
     }
 }

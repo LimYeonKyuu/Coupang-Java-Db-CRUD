@@ -7,7 +7,6 @@ public class CoupangController {
 
     public void addProduct(String name, int price, int stock, String description) {
         coupangService.addProduct(Product.builder().
-                id(Product.nextId++).
                 name(name).
                 price(price).
                 stock(stock).
@@ -32,9 +31,5 @@ public class CoupangController {
 
     public void deleteProduct(int id) {
         coupangService.deleteProduct(id);
-    }
-
-    public void saveProducts() {
-        coupangService.saveProducts();
     }
 }
