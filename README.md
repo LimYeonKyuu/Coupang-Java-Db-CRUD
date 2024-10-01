@@ -36,7 +36,7 @@
 - **IDE**: IntelliJ IDEA
 - **빌드 도구**: Maven
 - **Java 버전**: Java 8
-- **데이터베이스**: mysql or mariaDB
+- **데이터베이스**: mysql
 
 ## 데이터 모델
 - **Product**: 상품 정보를 저장하는 테이블
