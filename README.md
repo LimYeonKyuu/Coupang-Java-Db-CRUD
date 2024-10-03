@@ -45,3 +45,28 @@
     - **price**: 가격
     - **stock**: 재고 수량
     - **description**: 상품 설명
+
+## 실행 방법
+1. **데이터베이스 설정**
+    - `DatabaseUtil.java` 파일을 열어, 데이터베이스 연결 정보를 입력합니다.
+    - `getConnection()` 메소드에서 데이터베이스 연결 정보를 수정합니다.
+```java
+package org.example;
+
+import lombok.var;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DatabaseUtil {
+    private static final String URL = "db 연결 주소";
+    private static final String USER = "db 계정";
+    private static final String PASSWORD = "db 비밀번호";
+
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
+}
+'''
+
