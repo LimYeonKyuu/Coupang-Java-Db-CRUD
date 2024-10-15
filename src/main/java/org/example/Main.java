@@ -70,7 +70,7 @@ public class Main {
     }
 
     private static void updateProduct(Scanner scanner, CoupangController productController) {
-        System.out.print("수정할 물품의 인덱스를 입력하세요: ");
+        System.out.print("수정할 물품의 아이디를 입력하세요: ");
         int productId = scanner.nextInt();
         scanner.nextLine();
 
@@ -89,7 +89,7 @@ public class Main {
     }
 
     private static void deleteProduct(Scanner scanner, CoupangController productController) {
-        System.out.print("삭제할 물품 ID를 입력하세요: ");
+        System.out.print("삭제할 물품 아이디를 입력하세요: ");
         int productId = scanner.nextInt();
         scanner.nextLine();
 
