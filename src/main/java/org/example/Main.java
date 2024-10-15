@@ -70,7 +70,7 @@ public class Main {
     }
 
     private static void updateProduct(Scanner scanner, CoupangController productController) {
-        System.out.print("수정할 물품의 인덱스를 입력하세요: ");
+        System.out.print("수정할 물품의 아이디를 입력하세요: ");
         int productId = scanner.nextInt();
         scanner.nextLine();
 

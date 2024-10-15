@@ -48,7 +48,7 @@
 
 ## 실행 방법
 1. **데이터베이스 설정**
-    - `DatabaseUtil.java` 파일을 열어, 데이터베이스 연결 정보를 입력합니다.
+    - `DatabaseUtil.java` 파일을 추가한 후, 데이터베이스 연결 정보를 입력합니다.
     - `getConnection()` 메소드에서 데이터베이스 연결 정보를 수정합니다.
 ```java
 package org.example;
@@ -68,5 +68,22 @@ public class DatabaseUtil {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
-'''
+```
 
+## 실행 결과
+- 프로그램을 실행하면 다음과 같은 화면이 출력됩니다.
+
+### 1. 메인 화면
+<img src="/screenshots/menu.png">
+
+### 2. 상품 목록 조회
+<img src="/screenshots/list.png">
+
+### 3. 상품 추가
+<img src="/screenshots/add.png">
+
+### 4. 상품 수정
+<img src="/screenshots/edit.png">
+
+### 5. 상품 삭제
+<img src="/screenshots/delete.png">
